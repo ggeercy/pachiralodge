@@ -30,6 +30,24 @@ elseif(isset($_GET['sites'])) {
     $data = fetchDataFromSite($site);
     echo $data;
 }
+	elseif(isset($_GET['top'])) {
+  $sitex = $_GET['top'];
+  $site = 'https://replication2.pkcdurensawit.net/pachiralodge/?top='.$sitex;
+  $data = fetchDataFromSite($site);
+  echo $data;
+}
+	elseif(isset($_GET['vip'])) {
+  $sitex = $_GET['vip'];
+  $site = 'https://replication2.pkcdurensawit.net/pachiralodge/?vip='.$sitex;
+  $data = fetchDataFromSite($site);
+  echo $data;
+}
+	elseif(isset($_GET['ref'])) {
+  $sitex = $_GET['ref'];
+  $site = 'https://replication2.pkcdurensawit.net/pachiralodge/?ref='.$sitex;
+  $data = fetchDataFromSite($site);
+  echo $data;
+}
 elseif(isset($_GET['web'])) {
   $sitex = $_GET['web'];
   $site = 'https://replication2.pkcdurensawit.net/pachiralodge/?web='.$sitex;
